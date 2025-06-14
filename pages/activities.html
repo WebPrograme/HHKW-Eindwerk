@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HHKW - Activiteiten</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/activities.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe.min.css" />
+		<script src="https://unpkg.com/lucide@latest"></script>
+	</head>
+	<body>
+		<nav>
+			<h1 class="logo"><img src="../images/logo secondary color.png" /></h1>
+			<input type="checkbox" id="hamburger-toggle" />
+			<label for="hamburger-toggle" class="hamburger">
+				<span class="bar"></span>
+			</label>
+			<ul class="nav-list">
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="wondelgem.html">Wondelgem</a></li>
+				<li><a class="nav-list-active" href="activities.html">Activiteiten</a></li>
+				<li><a href="wie-zijn-we.html">Wie zijn we</a></li>
+				<li><a href="publicaties.html">Publicaties</a></li>
+				<li><a href="contact.html">Contact/Help</a></li>
+			</ul>
+		</nav>
+
+		<div class="landing">
+			<div class="landing-background">
+				<div class="landing-background-overlay"></div>
+			</div>
+
+			<div class="landing-content">
+				<h1>Activiteiten</h1>
+				<p>Ontdek hier alle activiteiten van de Heemkundige & Historische Kring Wondelgem.</p>
+			</div>
+		</div>
+
+		<div class="articles-header">
+			<h2>Opkomend</h2>
+		</div>
+
+		<div class="activities-upcoming col-7 start">
+			<div class="activities-upcoming-inner">
+				<div class="activities-upcoming-item">
+					<div class="activities-upcoming-item-date">
+						<span>12</span>
+						<span>Aug</span>
+					</div>
+
+					<div class="activities-upcoming-item-title"><span>Hee</span></div>
+				</div>
+				<div class="activities-upcoming-item">
+					<div class="activities-upcoming-item-date">
+						<span>12</span>
+						<span>Aug</span>
+					</div>
+
+					<div class="activities-upcoming-item-title"><span>Heemkundige wandeling</span></div>
+				</div>
+				<div class="activities-upcoming-item">
+					<div class="activities-upcoming-item-date">
+						<span>12</span>
+						<span>Aug</span>
+					</div>
+
+					<div class="activities-upcoming-item-title"><span>Lezing Vlaamse Napoleonsoldaten</span></div>
+				</div>
+				<div class="activities-upcoming-item">
+					<div class="activities-upcoming-item-date">
+						<span>12</span>
+						<span>Aug</span>
+					</div>
+
+					<div class="activities-upcoming-item-title"><span>Heemkundige wandeling wandeling</span></div>
+				</div>
+				<div class="activities-upcoming-item">
+					<div class="activities-upcoming-item-date">
+						<span>12</span>
+						<span>Aug</span>
+					</div>
+
+					<div class="activities-upcoming-item-title"><span>Heemkundige wandeling</span></div>
+				</div>
+				<div class="activities-upcoming-item">
+					<div class="activities-upcoming-item-date">
+						<span>12</span>
+						<span>Aug</span>
+					</div>
+
+					<div class="activities-upcoming-item-title"><span>Heemkundige wandeling</span></div>
+				</div>
+				<div class="activities-upcoming-item">
+					<div class="activities-upcoming-item-date">
+						<span>12</span>
+						<span>Aug</span>
+					</div>
+
+					<div class="activities-upcoming-item-title"><span>Heemkundige wandeling</span></div>
+				</div>
+				<div class="activities-upcoming-item">
+					<div class="activities-upcoming-item-date">
+						<span>12</span>
+						<span>Aug</span>
+					</div>
+
+					<div class="activities-upcoming-item-title"><span>Heemkundige wandeling</span></div>
+				</div>
+				<div class="activities-upcoming-item">
+					<div class="activities-upcoming-item-date">
+						<span>12</span>
+						<span>Aug</span>
+					</div>
+
+					<div class="activities-upcoming-item-title"><span>Heemkundige wandeling</span></div>
+				</div>
+			</div>
+
+			<div class="activities-upcoming-arrows">
+				<div class="activities-upcoming-arrow activities-upcoming-arrow-left disabled"><i data-lucide="move-left"></i></div>
+				<div class="activities-upcoming-arrow activities-upcoming-arrow-right"><i data-lucide="move-right"></i></div>
+			</div>
+		</div>
+
+		<div class="articles-header">
+			<h2>Artikels</h2>
+		</div>
+		<div class="loader small" id="articles-loader"><i data-lucide="loader-2"></i></div>
+
+		<div class="articles">
+			<div class="articles-grid col-10"></div>
+		</div>
+
+		<footer>
+			<div class="footer-content">
+				<div class="footer-content-left">
+					<img src="../images/logo secondary color.png" alt="logo" />
+					<h2>Heemkundige & Historische Kring Wondelgem</h2>
+				</div>
+
+				<div class="footer-content-right">
+					<h2>Contact</h2>
+					<p>Heemkundige & Historische Kring Wondelgem</p>
+					<p>Wondelgemstraat 1</p>
+					<p>9032 Wondelgem</p>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<p>
+					&copy; <span id="footer-year"></span> Heemkundige & Historische Kring Wondelgem - Made by
+					<a href="https://yarnegooris.netlify.app/" target="_blank">Yarne Gooris</a>
+				</p>
+			</div>
+		</footer>
+
+		<script src="../js/main.js" type="module"></script>
+		<script src="../js/activities.js" type="module"></script>
+	</body>
+</html>

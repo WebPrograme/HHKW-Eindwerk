@@ -1,0 +1,84 @@
+.page-article {
+    margin: 100px auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.page-article img {
+    width: 100%;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+    object-position: center;
+    background-color: #CED0CE;
+}
+
+.page-article h1 {
+    line-height: 120%;
+    color: var(--primary-color);
+    text-wrap: balance;
+}
+
+.page-article .page-article-date {
+    font-size: 1rem;
+    font-family: "Lexend Deca",
+        sans-serif;
+    color: var(--primary-color-light);
+    text-transform: uppercase;
+}
+
+.page-article .page-article-text {
+    margin-top: 20px;
+}
+
+.page-article .page-article-text p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 2rem;
+    color: rgb(21, 16, 58);
+}
+
+@media screen and (min-width: 740px) {
+    .page-article .page-article-text p {
+        font-size: 1.238rem
+    }
+}
+
+@media screen and (min-width: 834px) {
+    .page-article .page-article-text p {
+        font-size: 1.363rem
+    }
+}
+
+@media screen and (min-width: 1194px) {
+    .page-article .page-article-text p {
+        font-size: 1.25rem
+    }
+}
+
+.page-article .page-article-recent {
+    margin-top: 40px;
+
+}
+
+.page-article .page-article-recent .page-artilce-recent-header {
+    margin-bottom: 1rem;
+}
+
+.page-article .page-article-recent-articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.page-article .page-article-recent-articles .recent-article {
+    flex: 0 0 250px;
+}
+
+.page-article .page-article-recent-articles .recent-article img {
+    width: 100%;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+    object-position: center;
+    margin: 0px;
+}
