@@ -1,0 +1,47 @@
+.archive-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem 1.5rem;
+    margin: 0 auto;
+}
+
+.archive-list .archive-item {
+    padding: 1rem;
+}
+
+.archive-list .archive-item:not(.archive-item-image) {
+    background-color: var(--secondary-color);
+}
+
+.archive-list .archive-item img {
+    margin-top: 0;
+}
+
+.archive-list .archive-item h3 {
+    font-size: 1.25rem;
+    line-height: 120%;
+}
+
+.archive-list .archive-item:not(.archive-item-image) h3 {
+    color: var(--primary-color-light);
+}
+
+.archive-list .archive-item .archive-date {
+    font-size: .875rem;
+    font-family: "Lexend Deca",
+        sans-serif;
+    text-transform: capitalize;
+    color: var(--primary-color-light);
+}
+
+.archive-list .archive-item p {
+    font-size: 1.125rem;
+    line-height: 140%;
+    margin-top: .25rem;
+    color: rgb(21, 16, 58);
+}
+
+.timeline-load-more,
+.list-load-more {
+    margin: 2rem auto;
+}

@@ -1,5 +1,3 @@
-// Description: This file contains the components that are used in the application.
-
 // Class for a single article
 class Article {
 	constructor(data, parent, isSmall = false, multiple = false) {
@@ -12,6 +10,10 @@ class Article {
 			this.createArticle(data, parent, isSmall);
 
 			this.resizeGrid(parent);
+		}
+
+		if (this.constructor === Article) {
+			this.createArticle(data, parent, isSmall);
 		}
 	}
 
@@ -128,4 +130,53 @@ class Articles extends Article {
 	}
 }
 
-export { Article, Articles };
+// Class for a single publication
+class Publication {
+	constructor(data, parent) {
+		this.data = data;
+		this.parent = parent;
+		this.publication = null;
+
+		if (this.constructor === Publication) {
+			this.createPublication(data, parent);
+		}
+	}
+
+	createPublication(data, parent) {
+		const publication = document.createElement('div');
+		publication.classList.add('publication');
+
+		publication.innerHTML = `
+				<div class="publication-cover">
+					<img src="${data.CoverImage}" />
+				</div>
+				<div class="publication-content">
+					<h3>${data.Title}</h3>
+
+					<div class="publication-content-buttons">
+						<a class="btn btn-primary" href="${data.Content}" target="_blank">Lees</a>
+						<a class="btn btn-primary" download href="${data.Content}"><i data-lucide="download"></i></a>
+					</div>
+				</div>`;
+
+		this.publication = publication;
+
+		parent.appendChild(publication);
+	}
+}
+
+// Create a publication list
+class Publications extends Publication {
+	constructor(data, parent) {
+		super(data, parent);
+		this.createPublications(data, parent);
+	}
+
+	createPublications(data, parent) {
+		data.forEach((publication) => {
+			this.createPublication(publication, parent);
+		});
+	}
+}
+
+export { Article, Articles, Publication, Publications };

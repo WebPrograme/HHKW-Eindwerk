@@ -3,16 +3,15 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>HHKW - Help</title>
+		<title>HHKW - Wondelgem</title>
 
 		<link rel="icon" href="../images/logo secondary color.png" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="../css/style.css" />
-		<link rel="stylesheet" href="../css/page.css" />
+		<link rel="stylesheet" href="../css/wondelgem.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe.min.css" />
-		<script src="https://kit.fontawesome.com/62dc937956.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<nav>
@@ -23,7 +22,7 @@
 			</label>
 			<ul class="nav-list">
 				<li><a href="../index.html">Home</a></li>
-				<li><a href="wondelgem.html">Wondelgem</a></li>
+				<li><a class="nav-list-active" href="wondelgem.html">Wondelgem</a></li>
 				<li><a href="activities.html">Activiteiten</a></li>
 				<li><a href="wie-zijn-we.html">Wie zijn we</a></li>
 				<li><a href="publicaties.html">Publicaties</a></li>
@@ -31,17 +30,31 @@
 			</ul>
 		</nav>
 
-		<div class="col-9 page-article">
-			<div class="page-article-img">
-				<img src="" alt="article-1" />
+		<div class="landing">
+			<div class="landing-background">
+				<div class="landing-background-overlay"></div>
 			</div>
 
-			<h1 class="page-article-title">Inhoud Heemkundig Nieuws</h1>
+			<div class="landing-content">
+				<h1>wondelgem</h1>
+				<p>Ontdek hier alle artikels en publicaties van de Heemkundige & Historische Kring Wondelgem.</p>
 
-			<div class="page-article-content">
-				<span class="page-article-date">2 juli 2001</span>
+				<div class="tabs">
+					<div class="tab" data-value="Tijdlijn">Tijdlijn</div>
+					<div class="tab" data-value="Lijst">Lijst</div>
+				</div>
+			</div>
+		</div>
 
-				<div class="page-article-text"></div>
+		<div class="archive-panels">
+			<div class="panel" data-value="Tijdlijn">
+				<div class="timeline"></div>
+				<a class="btn btn-primary timeline-load-more">Laad meer</a>
+			</div>
+
+			<div class="panel" data-value="Lijst">
+				<div class="archive-list col-9"></div>
+				<a class="btn btn-primary list-load-more">Laad meer</a>
 			</div>
 		</div>
 
@@ -68,6 +81,6 @@
 			</div>
 		</footer>
 
-		<script src="../js/article.js" type="module"></script>
+		<script src="../js/wondelgem.js" type="module"></script>
 	</body>
 </html>
