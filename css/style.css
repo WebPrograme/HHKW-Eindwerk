@@ -1136,6 +1136,29 @@ textarea {
     margin-inline: auto;
 }
 
+.form-error,
+.form-success {
+    display: none;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    margin-inline: auto;
+    width: fit-content;
+    gap: 0.5rem;
+}
+
+.form-error.show,
+.form-success.show {
+    display: block;
+}
+
+.form-error {
+    color: var(--tertiary-color);
+}
+
+.form-success {
+    color: var(--success-color);
+}
+
 /* Footer */
 footer {
     background-color: var(--primary-color);
