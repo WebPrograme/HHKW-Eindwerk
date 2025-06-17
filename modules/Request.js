@@ -1,4 +1,4 @@
-const baseUrl = 'https://hhkw.onrender.com';
+const baseUrl = 'https://hhkw-eindwerk-api.onrender.com';
 
 async function postRequest(path, data, headers = { 'Content-Type': 'application/json' }, retry = false, trigger = null) {
 	if (trigger) trigger.classList.add('disabled');
