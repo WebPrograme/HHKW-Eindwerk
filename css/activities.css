@@ -94,7 +94,6 @@
 
 .activities-upcoming .activities-upcoming-item .activities-upcoming-item-title {
     position: relative;
-    width: min-content;
     min-width: 120px;
     min-height: 58px;
     display: flex;
